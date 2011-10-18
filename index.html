@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+	<title>editing-table</title>
+	<link rel="stylesheet" href="public/css/default.css" type="text/css" />
+
+	<script type="text/javascript" src="public/lib/array.js"></script>
+	<script type="text/javascript" src="public/lib/css.js"></script>
+	<script type="text/javascript" src="public/lib/dom.js"></script>
+	<script type="text/javascript" src="public/lib/event.js"></script>
+	<script type="text/javascript" src="public/lib/string.js"></script>
+	<script type="text/javascript" src="public/lib/utils.js"></script>
+    <script type="text/javascript" src="public/lib/validate.js"></script>
+    
+    <script type="text/javascript" src="public/src/log.js"></script>
+	
+    <script type="text/javascript" src="public/src/table-summary.js"></script>
+    <script type="text/javascript" src="public/src/table-events.js"></script>
+    <script type="text/javascript" src="public/src/table-sort.js"></script>
+	<script type="text/javascript" src="public/src/table.js"></script>
+	
+</head>
+<body>
+
+	<div id="table-wrapper">
+		<caption>Number of patients, by physician</caption>
+		<table>
+			<thead>
+				<tr>
+					<th class="table-name tleft"><a href="#">Name</a></th>
+					<th class="table-email tleft"><a href="#">Email</a></th>
+					<th class="table-queued tright"><a href="#">Queued</a></th>
+					<th class="table-served tright"><a href="#">Served</a></th>
+					<th class="table-total tright"><a href="#">Total</a></th>
+					<th class="table-manage"><span class="hide">Manage</span></th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>Dr Brown</td>
+					<td>brown@example.com</td>
+					<td class="tright">12</td>
+					<td class="tright">27</td>
+					<td class="tright">0</td>
+					<td class="manage"></td>
+				</tr>
+				<tr>
+					<td>Dr Jones</td>
+					<td>jones@example.com</td>
+					<td class="tright">11</td>
+					<td class="tright">25</td>
+					<td class="tright">0</td>
+					<td class="manage"></td>
+				</tr>
+				<tr>
+					<td>Dr Smith</td>
+					<td>smith@example.com</td>
+					<td class="tright">34</td>
+					<td class="tright">9</td>
+					<td class="tright">0</td>
+					<td class="manage"></td>
+				</tr>
+				<tr>
+					<td>Dr Williams</td>
+					<td>williams@example.com</td>
+					<td class="tright">23</td>
+					<td class="tright">17</td>
+					<td class="tright">0</td>
+					<td class="manage"></td>
+				</tr>
+			</tbody>
+			
+			<tfoot>
+				<tr>
+					<td><label>All physicians</label></td>
+					<td><span class="hide">space</span></td>
+					<td class="tright">0</td>
+					<td class="tright">0</td>
+					<td class="tright">0</td>
+					<td><span class="hide">Manage</span></td>
+				</tr>
+			</tfoot>
+		</table>
+		
+		<a id="js-add-row" href="#">Add a physician</a>
+	</div>
+
+</body>
+</html>

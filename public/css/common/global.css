@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.clear {
+	height: 0.001em;
+	overflow: hidden;
+	clear: both;
+}
+.hide {
+	display: none !important;
+}
+.left {
+	float: left !important;
+}
+.right {
+	float: right !important;
+}
+.tleft {
+	text-align: left;
+}
+.tright {
+	text-align: right;
+}
+a {
+	color: #2E7EC7;
+	text-decoration: none;
+	font-size: 11px;
+}
+a:visited {
+	/* color: #888888; */
+}
+input.error {
+    border: 1px solid #ff0000;
+    background: #FDD0F7;
+}
+input.success {
+    border: 1px solid #43B680;
+    background: #FFFFFF;
+}
