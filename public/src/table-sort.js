@@ -7,10 +7,10 @@ table.sort = (function() {
 
         var data = [];
         for(var i = 0, len = rows.length; i < len; ++i) {
-            var cell = rows[i];
+            var row = rows[i];
             data.push({
-                "body" : pklib.dom.children(cell)[number].innerHTML,
-                "element" : cell
+                "body" : pklib.dom.children(row)[number].innerHTML,
+                "element" : row
             });
         }
         return data;
