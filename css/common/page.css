@@ -1,103 +1,111 @@
 @charset "utf-8";
 
-#table-wrapper {
+#example-table {
     width: 778px;
     text-align: left;
     font-size: 12px;
     font-family: Verdana;
     float: left;
 }
-#table-wrapper label {
+#example-table label {
     font-weight: bold;
 }
-#table-wrapper table {
+#example-table table {
     width: 100%;
     margin: 0 0 11px;
 }
-#table-wrapper table thead {
+#example-table table thead {
     font-size: 11px;
     font-weight: bold;
     color: #666666;
 }
-#table-wrapper table thead th, #table-wrapper table tbody td, #table-wrapper table tfoot td {
+#example-table table thead th, 
+#example-table table tbody td, 
+#example-table table tfoot td {
     height: 24px;
     line-height: 24px;
     padding: 0 17px;
 }
-#table-wrapper table thead th {
+#example-table table thead th {
     border-top: 1px solid #888888;
     height: 27px;
     line-height: 27px;
     padding-top: 10px;
 }
-#table-wrapper table thead th a {
+#example-table table thead th a {
     color: #666666;
     display: inline;
     padding: 0 12px 0 0;
 }
-#table-wrapper table thead th a.up {
+#example-table table thead th a.up {
     background: url("../../img/arrows/up.gif") no-repeat right 5px;
 }
-#table-wrapper table thead th a.down {
+#example-table table thead th a.down {
     background: url("../../img/arrows/down.gif") no-repeat right 5px;
 }
-#table-wrapper table tfoot td, #table-wrapper table tbody td {
+#example-table table tfoot td,
+#example-table table tbody td {
     border-top: 1px solid #c2c2c2;
     font-family: Arial, Helvetica, sans-serif;
 }
-#table-wrapper table tbody td input {
+#example-table table tbody tr:hover {
+    background: #e60;
+    color: #fff;
+    cursor: pointer;
+}
+#example-table table tbody td input {
     width: 100%;
 }
-#table-wrapper table tbody td.edit {
+#example-table table tbody td.edit {
     background: #f0f8ff;
 }
-#table-wrapper table tbody td.edit input {
+#example-table table tbody td.edit input {
     border: 1px solid #4380b6;
 }
-#table-wrapper table tbody td.add {
+#example-table table tbody td.add {
     background: #f0fff8;
 }
-#table-wrapper table tbody td.add input {
+#example-table table tbody td.add input {
     border: 1px solid #43b680;
 }
-#table-wrapper table tbody td.tright input {
+#example-table table tbody td.tright input {
     text-align: right;
 }
-#table-wrapper table tfoot td {
+#example-table table tfoot td {
     border-top: 1px solid #888888;
     border-bottom: 1px dotted #999999;
 }
-#table-wrapper table tfoot td {
+#example-table table tfoot td {
     height: 21px;
     line-height: 21px;
 }
-#table-wrapper table .table-name {
+#example-table table .table-name {
     width: 123px;
 }
-#table-wrapper table .table-email {
+#example-table table .table-email {
     width: 143px;
 }
-#table-wrapper table .table-queued {
+#example-table table .table-queued {
     width: 43px;
 }
-#table-wrapper table .table-served {
+#example-table table .table-served {
     width: 63px;
 }
-#table-wrapper table .table-total {
+#example-table table .table-total {
     width: 63px;
 }
-#table-wrapper table .table-manage {
+#example-table table .table-manage {
     width: 115px;
 }
-#table-wrapper table .manage {
+#example-table table .manage {
     padding-right: 0;
 }
-#table-wrapper table .manage ul li {
+#example-table table .manage ul li {
     float: left;
     padding: 0 5px 0 0;
     line-height: 23px;
 }
-#table-wrapper table .manage ul li .ok {
+#example-table table .manage ul li .ok {
     background: url('../../img/bg/gradient-white-orange.gif') repeat-x 0 0;
     border: 1px solid #fe933a;
     padding: 0 11px;

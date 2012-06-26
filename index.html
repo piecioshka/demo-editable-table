@@ -1,75 +1,64 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     
 	<title>editing-table</title>
 	
 	<link rel="stylesheet" href="css/default.css" type="text/css" />
 
-	<script type="text/javascript" src="lib/array.js"></script>
-	<script type="text/javascript" src="lib/css.js"></script>
-	<script type="text/javascript" src="lib/dom.js"></script>
-	<script type="text/javascript" src="lib/event.js"></script>
-	<script type="text/javascript" src="lib/string.js"></script>
-	<script type="text/javascript" src="lib/utils.js"></script>
-    <script type="text/javascript" src="lib/validate.js"></script>
-    
-    <script type="text/javascript" src="src/log.js"></script>
-	
-    <script type="text/javascript" src="src/table-summary.js"></script>
-    <script type="text/javascript" src="src/table-events.js"></script>
-    <script type="text/javascript" src="src/table-sort.js"></script>
-	<script type="text/javascript" src="src/table.js"></script>	
+	<script type="text/javascript" src="lib/pklib.js"></script>
+	<script type="text/javascript" src="src/table.js"></script>
+	<script type="text/javascript" src="src/table-sort.js"></script>	
 </head>
 <body>
 
-	<div id="table-wrapper">
+	<div id="example-table">
 		<table>
 			<caption>Number of patients, by physician</caption>
 			<thead>
 				<tr>
-					<th class="table-name tleft"><a href="#">Name</a></th>
+					<th class="js-column-sort table-name tleft"><a href="#">Name</a></th>
 					<th class="table-email tleft"><a href="#">Email</a></th>
-					<th class="table-queued tright"><a href="#">Queued</a></th>
-					<th class="table-served tright"><a href="#">Served</a></th>
-					<th class="table-total tright"><a href="#">Total</a></th>
+					<th class="js-column-sort table-queued tright"><a href="#">Queued</a></th>
+					<th class="js-column-sort table-served tright"><a href="#">Served</a></th>
+					<th class="js-column-sort table-total tright"><a href="#">Total</a></th>
 					<th class="table-manage"><span class="hide">Manage</span></th>
 				</tr>
 			</thead>
 			
 			<tbody>
 				<tr>
-					<td>Dr Brown</td>
-					<td>brown@example.com</td>
-					<td class="tright">12</td>
-					<td class="tright">27</td>
-					<td class="tright">0</td>
-					<td class="manage"></td>
+					<td class="disabled">Dr Brown</td>
+					<td class="js-validate-string">brown@example.com</td>
+					<td class="js-validate-number tright">12</td>
+					<td class="js-validate-number tright">27</td>
+					<td class="disabled tright">0</td>
+					<td class="disabled manage"></td>
 				</tr>
 				<tr>
-					<td>Dr Jones</td>
-					<td>jones@example.com</td>
-					<td class="tright">11</td>
-					<td class="tright">25</td>
-					<td class="tright">0</td>
-					<td class="manage"></td>
+					<td class="disabled">Dr Jones</td>
+					<td class="js-validate-string">jones@example.com</td>
+					<td class="js-validate-number tright">11</td>
+					<td class="js-validate-number tright">25</td>
+					<td class="disabled tright">0</td>
+					<td class="disabled manage"></td>
 				</tr>
 				<tr>
-					<td>Dr Smith</td>
-					<td>smith@example.com</td>
-					<td class="tright">34</td>
-					<td class="tright">9</td>
-					<td class="tright">0</td>
-					<td class="manage"></td>
+					<td class="disabled">Dr Smith</td>
+					<td class="js-validate-string">smith@example.com</td>
+					<td class="js-validate-number tright">34</td>
+					<td class="js-validate-number tright">9</td>
+					<td class="disabled tright">0</td>
+					<td class="disabled manage"></td>
 				</tr>
 				<tr>
-					<td>Dr Williams</td>
-					<td>williams@example.com</td>
-					<td class="tright">23</td>
-					<td class="tright">17</td>
-					<td class="tright">0</td>
-					<td class="manage"></td>
+					<td class="disabled">Dr Williams</td>
+					<td class="js-validate-string">williams@example.com</td>
+					<td class="js-validate-number tright">23</td>
+					<td class="js-validate-number tright">17</td>
+					<td class="disabled tright">0</td>
+					<td class="disabled manage"></td>
 				</tr>
 			</tbody>
 			
