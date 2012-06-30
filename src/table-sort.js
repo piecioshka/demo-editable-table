@@ -8,6 +8,7 @@
         this.init = function (id) {
             console.log("TableSort.init()");
             this.dom = pklib.dom.by_id(id);
+            this.by_column();
             return this;
         };
         this.by_column = function () {
@@ -87,4 +88,4 @@
                 });
             };
     };    
-}())
+}());
