@@ -1,6 +1,10 @@
-# concept-editable-table
+# demo-editable-table
 
-> :fish: Concept of make editable table. Task for interview.
+:fish: Concept of make editable table. Task for interview.
+
+## Preview 🎉
+
+http://piecioshka.github.io/demo-editable-table/
 
 ## Why?
 
