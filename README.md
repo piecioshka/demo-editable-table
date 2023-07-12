@@ -1,6 +1,6 @@
 # demo-editable-table
 
-:fish: Concept of make editable table. Task for interview.
+🚁 Concept of make editable table. Task for interview.
 
 ## Preview 🎉
 
