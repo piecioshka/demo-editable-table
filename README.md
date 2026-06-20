@@ -8,4 +8,4 @@ http://piecioshka.github.io/demo-editable-table/
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2011
+[The MIT License](http://piecioshka.mit-license.org) @ 2026
